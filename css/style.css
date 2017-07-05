@@ -34,7 +34,7 @@ header {
 	height: 60px;
 	border-left: 15px dashed #050D3F;
 	display: flex;
-	justify-content: center;
+	justify-content: center; /*The menu items are centered */
 	margin-top: -60px;  /*To adjust the menubar to keep it at the top of everything else*/
 }
 
@@ -47,7 +47,6 @@ li {
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
-	font-weight: bold;
 	color: #031737;
 	padding: 19.5px;
 }
@@ -87,7 +86,7 @@ li {
 	max-width: 25%;
 	position: absolute;
 	left: 80px;
-	bottom: 25%;
+	bottom: 20%;
 }
 
 .social-logo {
@@ -100,10 +99,6 @@ li {
 
 .social-logo:hover {
 	height: 45px;
-}
-
-.social-logo:hover {
-	
 }
 
 .sign {
@@ -129,32 +124,28 @@ h3 {
 	padding: 7px;
 }
 
+section {
+	display: flex;
+	margin: 10px 20px;
+}
+
 .about {
 	background: #031737;
-	max-width: 95%;
 	height: 300px;
-	margin: 20px auto;
+	width: 70%;
+	margin-right: 20px;
 	-webkit-box-shadow: 8px 8px 7px grey;
 	-moz-box-shadow: 8px 8px 7px grey;
 	box-shadow: 10px 10px 10px grey;
 }
 
-.link-button {
-	color: white;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	border: 1px solid rgba(178,190,40,0.8);
-	border-radius: 10%;
-	padding: 7px;
-	position: relative;
-	top: 200px;
-	left: 600px;
-}
-
-.link-button:hover {
-	background: rgba(178,190,40,0.8);
-	color: #031737;
+.collection-info {
+	background: #031737;
+	height: 300px;
+	width: 30%;
+	-webkit-box-shadow: 8px 8px 7px grey;
+	-moz-box-shadow: 8px 8px 7px grey;
+	box-shadow: 10px 10px 10px grey;
 }
 
 h2 {
@@ -162,6 +153,29 @@ h2 {
 	color: #031737;
 	text-align: center;
 	padding: 7px;
+	border-left: 10px solid red;
+}
+
+.about-me {
+	color: snow;
+	padding: 2% 4%;
+	text-align: center;
+}
+
+.link-button {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(178,190,40,0.8);
+	border: 1px solid rgba(178,190,40,0.8);
+	padding: 6px;
+	position: relative;
+	left: 46%;
+	bottom: 5px;
+}
+
+.link-button:hover {
+	background: rgba(178,190,40,0.8);
+	color: #031737;
 }
 
 footer {
