@@ -1,0 +1,191 @@
+/*
+	Name: Balraj Katwal
+	UoN ID: 16418510 
+*/
+
+/*To remove existing margins and paddings on the page*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Exo', sans-serif;  /*setting the CSS property for font-family to Exo from google fonts and using the fallback font sans-serif*/
+}
+
+header {
+	background: url(../images/bg.jpg);	/*To add the background image*/
+	height: 600px;		/*The header covers the 600px of height*/
+	background-size: cover;			/*To cover the visible screen and avoiding the repetition*/
+	background-position: center;	/*To center the background image*/
+	background-attachment: fixed;	/*This property makes the image fixed to its place and does not scroll down or up when the page is scrolled*/
+}
+
+.logo {
+/*	setting the height and width of the page's logo*/
+	height: 55px;
+	width: 90px;
+	margin-left: 250px; /*To shift the logo towards right*/
+}
+
+.menubar {
+	background: rgba(178,190,40,0.80);  /*To set the background color of the menubar at the top of the page*/
+	/*setting the height of the menubar and giving it border to the left side of menubar for extra design*/
+	height: 60px;
+	border-left: 15px dashed #050D3F;
+	display: flex;
+	justify-content: center;
+	margin-top: -60px;  /*To adjust the menubar to keep it at the top of everything else*/
+}
+
+
+li {
+	list-style: none;  /*To remove the list style from the menu list*/
+}
+
+.menu {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: bold;
+	color: #031737;
+	padding: 19.5px;
+}
+
+.menu:hover {
+	background: #031737;
+	color: #B2BE28;
+}
+
+.flag {
+	height: 60px;
+	float: right;
+	margin: -60px 200px 0 0;
+}
+
+.mypic {
+	height: 180px;
+	width: 180px;
+	border: 1px solid black;
+	border-radius: 100%;
+	display: block;	  /*By setting the display property of an image to block helps to center the image horizontally using the margin-auto property. Ot it won't work.*/
+	margin: 40px auto;
+}
+
+.welcome-statement {
+	background: rgba(178,190,40,0.50);
+	padding: 1%;
+	max-width: 30%;
+	text-align: center;
+	margin: auto;
+	color: #031737;
+	font-size: 1.3em;
+	border: 1px solid black;
+}
+
+.social-links {
+	max-width: 25%;
+	position: absolute;
+	left: 80px;
+	bottom: 25%;
+}
+
+.social-logo {
+	height: 40px;
+	margin-right: 7px;
+	-webkit-transition: width 0.3s, height 0.3s; 
+	-moz-transition: width 0.3s, height 0.3s;
+    transition: width 0.3s, height 0.3s;
+}
+
+.social-logo:hover {
+	height: 45px;
+}
+
+.social-logo:hover {
+	
+}
+
+.sign {
+	height: 60px;
+	width: 150px;
+	position: absolute;
+	top: 70%;
+	left: 80%;
+}
+
+.quote {
+	max-width: 50%;
+	margin: 40px auto;
+	text-align: center;
+	border-left: 1px dashed black;
+	padding-left: 10px;
+	-webkit-box-shadow: 2px 2px 30px 6px grey;
+	-moz-box-shadow: 2px 2px 30px 6px grey;
+	box-shadow: 2px 2px 30px 6px grey;
+}
+
+h3 {
+	padding: 7px;
+}
+
+.about {
+	background: #031737;
+	max-width: 95%;
+	height: 300px;
+	margin: 20px auto;
+	-webkit-box-shadow: 8px 8px 7px grey;
+	-moz-box-shadow: 8px 8px 7px grey;
+	box-shadow: 10px 10px 10px grey;
+}
+
+.link-button {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid rgba(178,190,40,0.8);
+	border-radius: 10%;
+	padding: 7px;
+	position: relative;
+	top: 200px;
+	left: 600px;
+}
+
+.link-button:hover {
+	background: rgba(178,190,40,0.8);
+	color: #031737;
+}
+
+h2 {
+	background: rgba(178,190,40,0.8);
+	color: #031737;
+	text-align: center;
+	padding: 7px;
+}
+
+footer {
+	background: rgba(31,30,30,1.00);
+	height: 100px;
+	color: white;
+	margin: 10px 0 0 0;
+}
+
+.contact-info {
+	text-align: center;
+	max-width: 25%;
+	border-left: 1px dashed black;
+	margin: 40px auto;
+	-webkit-box-shadow: 2px 2px 30px 6px grey;
+	-moz-box-shadow: 2px 2px 30px 6px grey;
+	box-shadow: 2px 2px 30px 6px grey;
+}
+
+.contact-info-title {
+	font-weight: bold;
+}
+
+.footer-text {
+	text-align: center;
+	padding: 3%;
+}
