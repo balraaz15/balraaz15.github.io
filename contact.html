@@ -1,0 +1,68 @@
+<!--
+	Name: Balraj Katwal
+	UoN ID: 16418510 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Collection: Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styleContact.css">
+</head>
+
+<body>
+	<!--The header part's HTML code-->
+	<header>  
+		<div>
+			<!--To add the and link of the homepage in the logo-->
+			<a href="index.html">
+			<img class="logo" src="images/logo.png" alt="logo"> </a>
+			<!--To create the menubar containing links to other pages-->
+			<ul class="menubar">
+				<li><a class="menu" href="index.html">Home</a></li>				<!--The home page-->
+				<li><a class="menu" href="collection.html">Collection</a></li>	<!--The collection page -->
+				<li><a class="menu" href="bio.html">Bio</a></li>				<!--The Bio page for biography of collection-->
+				<li><a class="menu" href="contact.html">Contact</a></li>		<!--The contact page-->
+			</ul>
+		</div>
+		<img class="flag" src="images/flag.png" alt="Flag of Nepal">	<!--To add the flag of nepal-->
+	</header>
+	
+	<section>
+		<div class="contact-maintext">
+			<h1>Feel like chatting</h1>
+			<p>Feel free to leave me a message. I would love to know you.</p>
+		</div>
+		
+		<form method="post">
+			<div class="form-element">
+				<input type="text" name="user_firstname" placeholder="Firstname*" size="25" required>
+				<input type="text" name="user_surname" placeholder="Lastname*" size="25" required>
+			</div>
+			<div class="form-element">
+				<input type="email" name="user_email" placeholder="Email*" size="40" required>
+			</div>
+			<div>
+				<label for="gender">Gender:</label>
+				<input type="radio" name="gender" value="male" checked>Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+			</div>
+			<div class="form-element">
+				<textarea name="user_msg" id="msg" cols="40" rows="5" placeholder="Write your message here"></textarea>
+			</div>
+			<div class="form-element">
+				<button>Submit</button>
+			</div>
+			
+		</form>
+	</section>
+	
+	<!--code for footer part-->
+	<footer>
+		<p class="footer-text">Copyright &copy; All Rights Reserved.</p> 
+	</footer>
+</body>
+</html>

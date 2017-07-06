@@ -86,7 +86,7 @@ li {
 	max-width: 25%;
 	position: absolute;
 	left: 80px;
-	bottom: 20%;
+	bottom: 180px;
 }
 
 .social-logo {
@@ -105,8 +105,8 @@ li {
 	height: 60px;
 	width: 150px;
 	position: absolute;
-	top: 70%;
-	left: 80%;
+	bottom: 170px;
+	right: 120px;
 }
 
 .quote {
@@ -170,19 +170,12 @@ h2 {
 	padding: 6px;
 	position: relative;
 	left: 46%;
-	bottom: 5px;
+	bottom: 3px;
 }
 
 .link-button:hover {
 	background: rgba(178,190,40,0.8);
 	color: #031737;
-}
-
-footer {
-	background: rgba(31,30,30,1.00);
-	height: 100px;
-	color: white;
-	margin: 10px 0 0 0;
 }
 
 .contact-info {
@@ -197,6 +190,13 @@ footer {
 
 .contact-info-title {
 	font-weight: bold;
+}
+
+footer {
+	background: rgba(31,30,30,1.00);
+	height: 100px;
+	color: white;
+	margin: 10px 0 0 0;
 }
 
 .footer-text {

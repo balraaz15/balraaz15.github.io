@@ -1,0 +1,97 @@
+/*
+	Name: Balraj Katwal
+	UoN ID: 16418510 
+*/
+
+/*To remove existing margins and paddings on the page*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Exo', sans-serif;  /*setting the CSS property for font-family to Exo from google fonts and using the fallback font sans-serif*/
+}
+
+.logo {
+/*	setting the height and width of the page's logo*/
+	height: 55px;
+	width: 90px;
+	margin-left: 250px; /*To shift the logo towards right*/
+}
+
+.menubar {
+	background: rgba(178,190,40,0.80);  /*To set the background color of the menubar at the top of the page*/
+	/*setting the height of the menubar and giving it border to the left side of menubar for extra design*/
+	height: 58px;
+	border-left: 15px dashed #C5070B;
+	display: flex;
+	justify-content: center; /*The menu items are centered */
+	margin-top: -60px;  /*To adjust the menubar to keep it at the top of everything else*/
+}
+
+
+li {
+	list-style: none;  /*To remove the list style from the menu list*/
+}
+
+.menu {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #031737;
+	padding: 19.5px;
+}
+
+.menu:hover {
+	background: #031737;
+	color: #B2BE28;
+}
+
+.flag {
+	height: 60px;
+	float: right;
+	margin: -60px 200px 0 0;
+}
+
+section {
+	background: linear-gradient(to bottom, #111722, #38506B);   
+	height: 540px;
+	color: snow;
+}
+
+.contact-maintext {
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 3%;
+	line-height: 35px;
+}
+
+form {
+	border: 1px solid grey;
+	border-radius: 15px;
+	max-width: 35%;
+	margin-top: 20px;
+	margin-left: 200px;
+	padding: 10px;
+}
+
+input,textarea,button{
+	border: 0;
+	padding: 5px;
+	margin: 7px;
+	font-family: sans-serif;
+}
+
+label {margin-left: 5px;}
+
+footer {
+	background: rgba(31,30,30,1.00);
+	height: 100px;
+	color: white;
+}
+
+.footer-text {
+	text-align: center;
+	padding: 3%;
+}
