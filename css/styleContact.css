@@ -55,8 +55,8 @@ li {
 }
 
 section {
-	background: linear-gradient(to bottom, #111722, #38506B);   
-	height: 540px;
+	background: linear-gradient(to bottom, #111722, #38506B);
+	height: 570px;
 	color: snow;
 }
 
@@ -71,8 +71,7 @@ form {
 	border: 1px solid grey;
 	border-radius: 15px;
 	max-width: 35%;
-	margin-top: 20px;
-	margin-left: 200px;
+	margin: 20px 0px 20px 200px;
 	padding: 10px;
 }
 
@@ -83,7 +82,32 @@ input,textarea,button{
 	font-family: sans-serif;
 }
 
-label {margin-left: 5px;}
+label{margin-left: 7px; color: yellow;}
+select{margin: 7px;}
+
+button {
+	background: red;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.contact-info {
+	text-align: center;
+	max-width: 25%;
+	border-left: 1px dashed yellow;
+	position: relative;
+	bottom: 320px;
+	left: 800px;
+	padding: 15px;
+	-webkit-box-shadow: 2px 2px 30px 6px grey;
+	-moz-box-shadow: 2px 2px 30px 6px grey;
+	box-shadow: 2px 2px 30px 6px grey;
+}
+
+.contact-info-title {
+	font-weight: bold;
+}
 
 footer {
 	background: rgba(31,30,30,1.00);

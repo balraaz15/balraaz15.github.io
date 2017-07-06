@@ -37,27 +37,55 @@
 		</div>
 		
 		<form method="post">
-			<div class="form-element">
+			<div>
 				<input type="text" name="user_firstname" placeholder="Firstname*" size="25" required>
 				<input type="text" name="user_surname" placeholder="Lastname*" size="25" required>
 			</div>
-			<div class="form-element">
+			<div>
 				<input type="email" name="user_email" placeholder="Email*" size="40" required>
 			</div>
 			<div>
-				<label for="gender">Gender:</label>
-				<input type="radio" name="gender" value="male" checked>Male
+				<label for="gender">Gender:</label><br>
+				<input type="radio" name="gender" value="male">Male
 				<input type="radio" name="gender" value="female">Female
 				<input type="radio" name="gender" value="other">Other
 			</div>
-			<div class="form-element">
+			<div>
+				<label for="user_description">What best describes you?</label> <br>
+				<input type="checkbox" name="student" value="on">Student
+				<input type="checkbox" name="parent" value="on">Parent
+				<input type="checkbox" name="employee" value="on">Full time employee
+				<input type="checkbox" name="sport" value="on">Sport Enthusiast
+				<input type="checkbox" name="geek" value="on">Computer geek
+				<input type="checkbox" name="elderly" value="on">Elderly citizen
+			</div>
+			<div>
+				<label for="">Select the type of message:</label> <br>
+				<select name="dropdown">
+					<option value="select">Select an option</option>
+					<option value="chat">Chat</option>
+					<option value="feedback">Feedback</option>
+				</select>
+			</div>
+			<div>
 				<textarea name="user_msg" id="msg" cols="40" rows="5" placeholder="Write your message here"></textarea>
 			</div>
-			<div class="form-element">
+			<div>
 				<button>Submit</button>
+				<button type="reset">Reset</button>
 			</div>
 			
 		</form>
+		
+		<div class="contact-info">
+		<p>
+			<span class="contact-info-title">E-mail me at:</span> balraj_katwal@gmail.com <br> <!--My email address for unofficial use-->
+			<span class="contact-info-title">Call me at:</span> +977 9841999999 <br>	<!--A dummy phone number-->
+			25 New Baneshwor Road <br>	<!--An example address-->
+			Kathmandu, Nepal <br>
+			44600
+		</p>
+	</div>
 	</section>
 	
 	<!--code for footer part-->
