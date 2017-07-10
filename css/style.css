@@ -145,6 +145,24 @@ section {
 	box-shadow: 10px 10px 10px grey;	/*To project the shadow from the collection info box*/
 }
 
+.collection-demo {
+	display: flex;	/*To make the display property of images to flex*/
+	justify-content: center;	/*To make the images fill the center spaces first*/
+	flex-wrap: wrap;	/*To make the images display in multiple lines according to the screen size*/
+	padding: 5px;
+}
+
+.collection-demo img{
+	width: 100px;
+	height: 90px;
+	margin: 5px;
+	transition: all 1s ease; /*To set the transition property on all images*/
+}
+
+.collection-demo img:hover {
+	transform: scale(1.15); /*To scale up the size of images on hover*/
+}
+
 h2 { /*Properties for h2*/
 	background: rgba(178,190,40,0.8);
 	color: #031737;
@@ -176,7 +194,7 @@ h2 { /*Properties for h2*/
 
 .collection-link { /*Properties of link button in right side box of section part*/
 	position: relative;
-	top: 200px;
+	top: 10px;
 	left: 150px;
 }
 

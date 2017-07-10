@@ -62,7 +62,6 @@ li {
 
 section { /*Properties for section part*/
 	background: linear-gradient(to bottom, #111722, #38506B);	/*Adding a linear gradient background*/
-	max-height: 650px;
 	color: snow;
 }
 
