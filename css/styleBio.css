@@ -24,7 +24,6 @@ body {
 .logo:hover{
 	transform: scale(1.15);  /*To scale up the size of logo on hover*/
 }
-
 .menubar {
 	background: rgba(178,190,40,0.80);  /*To set the background color of the menubar at the top of the page*/
 	/*setting the height of the menubar and giving it border to the left side of menubar for extra design*/
@@ -57,60 +56,6 @@ li {
 	height: 60px;
 	float: right;	/*To render the flag of Nepal at the right side in the menubar*/
 	margin: -60px 200px 0 0;
-}
-/*The code upto here is copied to stylesheets of collection and bio page as well because the header and its property are same in those pages.*/
-
-section { /*Properties for section part*/
-	background: linear-gradient(to bottom, #111722, #38506B);	/*Adding a linear gradient background*/
-	max-height: 650px;
-	color: snow;
-}
-
-.contact-maintext { /*Properties for the heading of the page*/
-	text-align: center;
-	font-size: 1.2em;
-	padding-top: 3%;
-	line-height: 35px; /*To create some vertical space between the lines*/
-}
-
-form {	/*Properties of the box that contains a static form*/
-	border: 1px solid grey;
-	border-radius: 15px;	/*To make the border curve at the edges*/
-	max-width: 35%;
-	margin: 20px 0px 20px 200px;
-	padding: 10px;
-}
-
-input,textarea,button{	/*Properties for input, textarea and button tags*/
-	border: 0;
-	padding: 5px;
-	margin: 7px;
-	font-family: sans-serif;
-}
-
-label{margin-left: 7px; color: yellow;}	/*To make the words in the label distinct*/
-select{margin: 7px;}
-
-button {	/*Properties for buttons*/
-	background: red;
-	color: white;
-	padding: 10px;
-	cursor: pointer;	/*To changer the mouse cursor to pointer on hovering above it*/
-}
-
-.contact-info {	/*properties for the contact info on the right side of the page*/
-	text-align: center;
-	max-width: 25%;
-	border-left: 1px dashed yellow;
-	position: relative;
-	bottom: 320px;
-	left: 800px;
-	padding: 15px;
-	box-shadow: 2px 2px 30px 6px grey;	/*To give the box shadow*/
-}
-
-.contact-info-title {
-	font-weight: bold;
 }
 
 footer {	/*Propersies for footer*/

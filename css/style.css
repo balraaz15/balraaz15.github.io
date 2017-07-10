@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	background: url(../images/bg.jpg);	/*To add the background image*/
+	background: url(../images/bg.png);	/*To add the background image*/
 	height: 600px;		/*The header covers the 600px of height*/
 	background-size: cover;			/*To cover the visible screen and avoiding the repetition*/
 	background-position: center;	/*To center the background image*/
@@ -26,13 +26,18 @@ header {
 	height: 55px;
 	width: 90px;
 	margin-left: 250px; /*To shift the logo towards right*/
+	transition: all 1s ease;  /*To set the transition property for each social logo item*/
+}
+
+.logo:hover{
+	transform: scale(1.15);  /*To scale up the size of logo on hover*/
 }
 
 .menubar {
 	background: rgba(178,190,40,0.80);  /*To set the background color of the menubar at the top of the page*/
 	/*setting the height of the menubar and giving it border to the left side of menubar for extra design*/
 	height: 60px;
-	border-left: 15px dashed #050D3F;
+	border-left: 15px dashed #050D3F; 
 	display: flex;
 	justify-content: center; /*The menu items are centered */
 	margin-top: -60px;  /*To adjust the menubar to keep it at the top of everything else*/
@@ -44,21 +49,21 @@ li {
 }
 
 .menu {
-	text-decoration: none;
-	text-transform: uppercase;
-	display: inline-block;
+	text-decoration: none;	/*To remove the underline from the links*/
+	text-transform: uppercase;	/*To make all the letters uppercase*/
+	display: inline-block;	/*To display the elements in the block elements*/
 	color: #031737;
 	padding: 19.5px;
 }
 
-.menu:hover {
+.menu:hover {  /*Changes the background color and color of the menu links*/
 	background: #031737;
 	color: #B2BE28;
 }
 
 .flag {
 	height: 60px;
-	float: right;
+	float: right;	/*To render the flag of Nepal at the right side in the menubar*/
 	margin: -60px 200px 0 0;
 }
 
@@ -66,9 +71,9 @@ li {
 	height: 180px;
 	width: 180px;
 	border: 1px solid black;
-	border-radius: 100%;
-	display: block;	  /*By setting the display property of an image to block helps to center the image horizontally using the margin-auto property. Ot it won't work.*/
-	margin: 40px auto;
+	border-radius: 100%;	/*To make the image circular*/
+	display: block;	  /*By setting the display property of an image to block helps to center the image horizontally using the margin-auto property.*/
+	margin: 40px auto;	/*To place the picture in the center*/
 }
 
 .welcome-statement {
@@ -76,13 +81,13 @@ li {
 	padding: 1%;
 	max-width: 30%;
 	text-align: center;
-	margin: auto;
+	margin: auto;	/*To center the welcome statement just below the picture*/
 	color: #031737;
-	font-size: 1.3em;
+	font-size: 1.3em;	/*To increase the font size than normal*/
 	border: 1px solid black;
 }
 
-.social-links {
+.social-links { /*To adjust the position and width of the social logo link button's line*/
 	max-width: 25%;
 	position: absolute;
 	left: 80px;
@@ -92,19 +97,17 @@ li {
 .social-logo {
 	height: 40px;
 	margin-right: 7px;
-	-webkit-transition: width 0.3s, height 0.3s; 
-	-moz-transition: width 0.3s, height 0.3s;
-    transition: width 0.3s, height 0.3s;
+    transition: all .5s ease;	/*To set the transition property for each social logo item*/
 }
 
 .social-logo:hover {
-	height: 45px;
+	transform: scale(1.25); /*To scale up the size of social logo on hover*/
 }
 
 .sign {
 	height: 60px;
 	width: 150px;
-	position: absolute;
+	position: absolute;	/*To adjust the position of signature*/
 	bottom: 170px;
 	right: 120px;
 }
@@ -115,40 +118,34 @@ li {
 	text-align: center;
 	border-left: 1px dashed black;
 	padding-left: 10px;
-	-webkit-box-shadow: 2px 2px 30px 6px grey;
-	-moz-box-shadow: 2px 2px 30px 6px grey;
-	box-shadow: 2px 2px 30px 6px grey;
+	box-shadow: 2px 2px 30px 6px grey;	/*To project a shadow from the quote box*/
 }
 
 h3 {
-	padding: 7px;
+	padding: 7px;	
 }
 
-section {
+section { 
 	display: flex;
 	margin: 10px 20px;
 }
 
-.about {
+.about { /*Properties for left box of the section part*/
 	background: #031737;
 	height: 300px;
 	width: 70%;
 	margin-right: 20px;
-	-webkit-box-shadow: 8px 8px 7px grey;
-	-moz-box-shadow: 8px 8px 7px grey;
-	box-shadow: 10px 10px 10px grey;
+	box-shadow: 10px 10px 10px grey;	/*To project the shadow from the about box*/
 }
 
-.collection-info {
+.collection-info {	/*Properties for right box of the section part*/
 	background: #031737;
 	height: 300px;
 	width: 30%;
-	-webkit-box-shadow: 8px 8px 7px grey;
-	-moz-box-shadow: 8px 8px 7px grey;
-	box-shadow: 10px 10px 10px grey;
+	box-shadow: 10px 10px 10px grey;	/*To project the shadow from the collection info box*/
 }
 
-h2 {
+h2 { /*Properties for h2*/
 	background: rgba(178,190,40,0.8);
 	color: #031737;
 	text-align: center;
@@ -156,13 +153,13 @@ h2 {
 	border-left: 10px solid red;
 }
 
-.about-me {
+.about-me { /*Properties for the text inside the  about box*/
 	color: snow;
 	padding: 2% 4%;
 	text-align: center;
 }
 
-.link-button {
+.link-button { /*Properties for the link button in about box*/
 	text-transform: uppercase;
 	text-decoration: none;
 	color: rgba(178,190,40,0.8);
@@ -170,36 +167,41 @@ h2 {
 	padding: 6px;
 	position: relative;
 	left: 46%;
-	bottom: 3px;
 }
 
-.link-button:hover {
+.link-button:hover {	/*Adjusting the background and color of link button in about box and right side's box of section part on hover*/
 	background: rgba(178,190,40,0.8);
 	color: #031737;
 }
 
-.contact-info {
+.collection-link { /*Properties of link button in right side box of section part*/
+	position: relative;
+	top: 200px;
+	left: 150px;
+}
+
+.contact-info {	/*Properties of contact info box in between section and footer*/
 	text-align: center;
 	max-width: 25%;
 	border-left: 1px dashed black;
 	margin: 40px auto;
-	-webkit-box-shadow: 2px 2px 30px 6px grey;
-	-moz-box-shadow: 2px 2px 30px 6px grey;
-	box-shadow: 2px 2px 30px 6px grey;
+	box-shadow: 2px 2px 30px 6px grey;	/*To project a shadow from the contact info box*/
 }
 
 .contact-info-title {
 	font-weight: bold;
 }
 
-footer {
+/*Properties of footer box*/
+/*The code for footer part is same for all the pages*/
+footer { 
 	background: rgba(31,30,30,1.00);
 	height: 100px;
 	color: white;
 	margin: 10px 0 0 0;
 }
 
-.footer-text {
+.footer-text { 	/*Properties of text in the footer*/
 	text-align: center;
 	padding: 3%;
 }

@@ -6,10 +6,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>My Collection: Contact</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/styleContact.css">
+	<meta charset="utf-8"> <!--To declare the pages character encoding-->
+	<title>My Collection: Contact</title> <!--The title of the page-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">	<!--To control the pages dimemnsions and scaling-->
+	<link rel="stylesheet" href="css/styleContact.css">	<!--Linking css stylesheet to the html-->
+ 	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"> <!--To add the Google font API and appending the font-family Exo in the page-->
 </head>
 
 <body>
@@ -29,29 +30,31 @@
 		</div>
 		<img class="flag" src="images/flag.png" alt="Flag of Nepal">	<!--To add the flag of nepal-->
 	</header>
+	<!--The code upto here is copied to contact.html, collection.html and bio.html as well because the header property are same in those pages.-->
 	
+	<!--The section parts HTMl code-->
 	<section>
-		<div class="contact-maintext">
+		<div class="contact-maintext"> <!--Heading for the page.-->
 			<h1>Feel like chatting</h1>
 			<p>Feel free to leave me a message. I would love to know you.</p>
 		</div>
-		
+		<!--Creating the static form-->
 		<form method="post">
-			<div>
-				<input type="text" name="user_firstname" placeholder="Firstname*" size="25" required>
-				<input type="text" name="user_surname" placeholder="Lastname*" size="25" required>
+			<div>	<!--To add the textfield for firstname and surname-->
+				<input type="text" name="user_firstname" placeholder="Firstname*" size="25" required>	<!--It is a required field-->
+				<input type="text" name="user_surname" placeholder="Lastname*" size="25" required>	<!--It is a required field-->
 			</div>
-			<div>
-				<input type="email" name="user_email" placeholder="Email*" size="40" required>
+			<div>	<!--To add the textfield for email address-->
+				<input type="email" name="user_email" placeholder="Email*" size="30" required>	<!--It is a required field and also users should provide a valid email address-->
 			</div>
-			<div>
-				<label for="gender">Gender:</label><br>
+			<div>	<!--To add the radio buttons for gender-->
+				<label>Gender:</label><br>
 				<input type="radio" name="gender" value="male">Male
 				<input type="radio" name="gender" value="female">Female
 				<input type="radio" name="gender" value="other">Other
 			</div>
-			<div>
-				<label for="user_description">What best describes you?</label> <br>
+			<div>	<!--To add multiple checkboxes for the particular question-->
+				<label>What best describes you?</label> <br>
 				<input type="checkbox" name="student" value="on">Student
 				<input type="checkbox" name="parent" value="on">Parent
 				<input type="checkbox" name="employee" value="on">Full time employee
@@ -59,27 +62,27 @@
 				<input type="checkbox" name="geek" value="on">Computer geek
 				<input type="checkbox" name="elderly" value="on">Elderly citizen
 			</div>
-			<div>
-				<label for="">Select the type of message:</label> <br>
+			<div>	<!--To add the selection box-->
+				<label>Select the type of message:</label> <br>
 				<select name="dropdown">
 					<option value="select">Select an option</option>
 					<option value="chat">Chat</option>
 					<option value="feedback">Feedback</option>
 				</select>
 			</div>
-			<div>
-				<textarea name="user_msg" id="msg" cols="40" rows="5" placeholder="Write your message here"></textarea>
+			<div>	<!--To add the multi line text area-->
+				<textarea name="user_msg" id="msg" cols="34" rows="5" placeholder="Write your message here"></textarea>
 			</div>
-			<div>
+			<div>	<!--To add the buttons-->
 				<button>Submit</button>
 				<button type="reset">Reset</button>
 			</div>
 			
 		</form>
 		
-		<div class="contact-info">
+		<div class="contact-info">	<!--To display my contact info-->
 		<p>
-			<span class="contact-info-title">E-mail me at:</span> balraj_katwal@gmail.com <br> <!--My email address for unofficial use-->
+			<span class="contact-info-title">E-mail me at:</span> balraj_katwal@gmail.com <br> <!--A fake email address-->
 			<span class="contact-info-title">Call me at:</span> +977 9841999999 <br>	<!--A dummy phone number-->
 			25 New Baneshwor Road <br>	<!--An example address-->
 			Kathmandu, Nepal <br>
@@ -88,7 +91,7 @@
 	</div>
 	</section>
 	
-	<!--code for footer part-->
+	<!--Footer part-->
 	<footer>
 		<p class="footer-text">Copyright &copy; All Rights Reserved.</p> 
 	</footer>

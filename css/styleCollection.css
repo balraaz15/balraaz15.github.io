@@ -17,12 +17,12 @@ body {
 /*	setting the height and width of the page's logo*/
 	height: 55px;
 	width: 90px;
-	margin-left: 250px; /*To shift the logo towards right*/
+	margin: 0px 0px 18px 250px; /*To shift the logo towards right*/
 	transition: all 1s ease;  /*To set the transition property for each social logo item*/
 }
 
 .logo:hover{
-	transform: scale(1.15);  /*To scale up the size of logo on hover*/
+	transform: scale(1.10);  /*To scale up the size of logo on hover*/
 }
 
 .menubar {
@@ -32,7 +32,7 @@ body {
 	border-left: 15px dashed #C5070B;
 	display: flex;
 	justify-content: center; /*The menu items are centered */
-	margin-top: -60px;  /*To adjust the menubar to keep it at the top of everything else*/
+	margin-top: -80px;  /*To adjust the menubar to keep it at the top of everything else*/
 }
 
 
@@ -58,59 +58,38 @@ li {
 	float: right;	/*To render the flag of Nepal at the right side in the menubar*/
 	margin: -60px 200px 0 0;
 }
-/*The code upto here is copied to stylesheets of collection and bio page as well because the header and its property are same in those pages.*/
 
-section { /*Properties for section part*/
-	background: linear-gradient(to bottom, #111722, #38506B);	/*Adding a linear gradient background*/
-	max-height: 650px;
+section {
+	background: linear-gradient(to bottom, #111722, #38506B);
+}
+
+h3 {
+	text-align: center;
+	padding-top: 20px;
 	color: snow;
 }
 
-.contact-maintext { /*Properties for the heading of the page*/
-	text-align: center;
-	font-size: 1.2em;
-	padding-top: 3%;
-	line-height: 35px; /*To create some vertical space between the lines*/
+.collection {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: auto;
+	margin: 10px 20px 0px 20px;
+	padding: 15px 0px;
+	box-shadow: 1px 1px 20px 1px grey;
 }
 
-form {	/*Properties of the box that contains a static form*/
-	border: 1px solid grey;
-	border-radius: 15px;	/*To make the border curve at the edges*/
-	max-width: 35%;
-	margin: 20px 0px 20px 200px;
-	padding: 10px;
+.childhood-pics img{
+	margin: 0px 15px;
 }
 
-input,textarea,button{	/*Properties for input, textarea and button tags*/
-	border: 0;
-	padding: 5px;
-	margin: 7px;
-	font-family: sans-serif;
+img {
+	margin: 8px;
+	transition: all 1s ease;
 }
 
-label{margin-left: 7px; color: yellow;}	/*To make the words in the label distinct*/
-select{margin: 7px;}
-
-button {	/*Properties for buttons*/
-	background: red;
-	color: white;
-	padding: 10px;
-	cursor: pointer;	/*To changer the mouse cursor to pointer on hovering above it*/
-}
-
-.contact-info {	/*properties for the contact info on the right side of the page*/
-	text-align: center;
-	max-width: 25%;
-	border-left: 1px dashed yellow;
-	position: relative;
-	bottom: 320px;
-	left: 800px;
-	padding: 15px;
-	box-shadow: 2px 2px 30px 6px grey;	/*To give the box shadow*/
-}
-
-.contact-info-title {
-	font-weight: bold;
+img:hover {
+	transform: scale(1.20); /*To scale up the size of images*/
 }
 
 footer {	/*Propersies for footer*/
