@@ -64,7 +64,7 @@ section {
 	padding: 20px 0px;
 }
 
-h3 {
+h2, h3 {
 	text-align: center;
 	padding: 20px 0px;
 	color: snow;
@@ -79,6 +79,14 @@ h3 {
 	margin-bottom: 20px;
 	padding: 15px 0px;
 	box-shadow: 1px 1px 20px 1px grey; /*To add the box shadow in each collection box*/
+}
+
+.childhood-pics img{
+	margin: 0px 25px; /*To change the margin property slightly different form parent*/
+}
+
+.personal-pics img{
+	margin: 0px 5px; /*To change the margin property slightly different from the parent*/
 }
 
 .collection img {
