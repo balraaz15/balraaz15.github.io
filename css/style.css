@@ -87,6 +87,10 @@ li {
 	border: 1px solid black;
 }
 
+#github-repo {
+	font-size: 0.8em;
+}
+
 .social-links { /*To adjust the position and width of the social logo link button's line*/
 	max-width: 25%;
 	position: relative;
