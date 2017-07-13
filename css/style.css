@@ -89,9 +89,9 @@ li {
 
 .social-links { /*To adjust the position and width of the social logo link button's line*/
 	max-width: 25%;
-	position: absolute;
+	position: relative;
 	left: 80px;
-	bottom: 180px;
+	top: 60px;
 }
 
 .social-logo {
@@ -107,9 +107,9 @@ li {
 .sign {
 	height: 60px;
 	width: 150px;
-	position: absolute;	/*To adjust the position of signature*/
-	bottom: 170px;
-	right: 120px;
+	float: right;
+	position: relative;	/*To adjust the position of signature*/
+	right: 100px;
 }
 
 .quote {
